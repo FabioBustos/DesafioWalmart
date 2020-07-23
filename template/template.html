@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow-x:hidden ;
+        }
+        #main{
+            background-color: #f5f5f5;
+            min-height: 80vh;
+            width: 100vw;
+        }
+        nav{
+            background-color:#0071ce;
+            width: 100vw;
+            height: 15vh;
+            max-height: 74px;
+            display: flex;
+            align-items: center;
+        }
+        nav input{
+            border-radius: 10px;
+            height: 30px;
+            width:  50vw;
+            margin-left: 20px;
+        }
+        #logoNav{
+            width: 150px;
+            margin-left: 50px;
+        }
+
+        #content{
+            min-height: 80vh;
+            width: 100vw;
+            display: flex;
+        }
+        
+        #resultadoText {
+            width: 30vw;
+            min-height: 60vh;
+            /* height: 100vh; */
+            display: flex;
+            justify-items: center;
+        }
+        #resultadoText div{
+            width: 70vw;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #productos {
+            width: 70vw;
+            min-height: 60vh;
+            height: auto;
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            column-gap: 10px;
+            row-gap: 15px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+
+        }
+        article{
+            border: black 1px solid;
+            height: 400px;
+            width: 199px;
+        }
+        article .imgCard{ 
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 72%, rgba(180,180,180,1) 100%);
+
+        }
+        article .infoCard{ 
+            height: 180px;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            flex-direction: column;
+
+        }
+        .precio{
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .precio div div{
+            display: flex;
+            flex-direction: row;
+            bottom: 0px;
+            
+        }
+        .precio div:nth-child(1){
+            margin-right: 10px;
+
+        }
+        .precio a{
+            text-decoration: none;
+            color: #0071ce;
+            border: #0071ce 1px solid;
+            border-radius: 20px;
+            padding: 5px;
+            font-weight: bold;
+            width: 100px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+        .cardfooter{
+            height: 70px;
+        }
+        .despacho{
+            color: #0071ce;
+            border: #0071ce 1px solid;
+            border-radius: 20px;
+            padding: 6px;
+            font-size: 0.7em;
+        }
+        .retiro{
+            color: rgb(255, 69, 0);
+            border: rgb(255, 69, 0) 1px solid;
+            border-radius: 20px;
+            padding: 6px;
+            font-size: 0.7em;
+        
+        }
+        .AgregarCarro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        footer{
+            background-color: #0879c9;
+            width: 100vw;
+            height: 15vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <img src="asset/logo.svg" id="logoNav">
+            <input type="text" placeholder="¿Qué producto buscas hoy?">
+        </nav>
+        <section id="content">
+            <section id="resultadoText">
+                <div>
+                    <span>resultado de busqueda:</span> 
+                </div>
+                
+            </section>
+            <section id="productos">
+                <article>
+                    <div class="imgCard">
+                       <img src="/catalogo/images/computerIcon.svg" alt="">
+                    </div>
+                    <div class="infoCard">
+                        <div class="producto">
+                            <p><b>televisor</b> 8k</p>
+                        </div>
+                        
+                        <div class="precio">
+                            <div>
+                                <p >$500.000</p>
+                                <del>$500.000</del>
+                            </div>
+                            
+                            <div class="cardfooter">
+                                <div>
+                                    <div class="despacho">
+                                        despacho
+                                    </div>
+                                    <div class="retiro">
+                                        retiro
+                                    </div>
+                                </div>
+                                <div class="AgregarCarro">
+                                    <a href="#"> Agregar</a>    
+                                </div>
+                                
+                            </div>
+                                                        
+                        </div>
+                        
+                    </div>
+                </article>
+                <article>
+                    <div class="imgCard">
+                        img
+                    </div>
+                    <div class="infoCard">
+                        <p class="monto">500.000</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="imgCard">
+                        img
+                    </div>
+                    <div class="infoCard">
+                        <p class="monto">500.000</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="imgCard">
+                        img
+                    </div>
+                    <div class="infoCard">
+                        <p class="monto">500.000</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="imgCard">
+                        img
+                    </div>
+                    <div class="infoCard">
+                        <p class="monto">500.000</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="imgCard">
+                        img
+                    </div>
+                    <div class="infoCard">
+                        <p class="monto">500.000</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="imgCard">
+                        img
+                    </div>
+                    <div class="infoCard">
+                        <p class="monto">500.000</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="imgCard">
+                        img
+                    </div>
+                    <div class="infoCard">
+                        <p class="monto">500.000</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="imgCard">
+                        img
+                    </div>
+                    <div class="infoCard">
+                        <p class="monto">500.000</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="imgCard">
+                        img
+                    </div>
+                    <div class="infoCard">
+                        <p class="monto">500.000</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="imgCard">
+                        img
+                    </div>
+                    <div class="infoCard">
+                        <p class="monto">500.000</p>
+                    </div>
+                </article>
+                
+              
+            </section>
+        </section>
+        <footer></footer>
+    </div>
+    <script>
+        const images = document.querySelectorAll('.imgCard img')
+        images.forEach(item => {
+        const src = item.getAttribute('src');
+        const newSrc = 'www.lider.cl' + src;
+        item.setAttribute('src', newSrc);
+        })
+    </script>
+</body>
+</html>
